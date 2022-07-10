@@ -9,7 +9,8 @@ import UIKit
 
 class DetailsVC: UIViewController {
     
-    var passedUserName: String!
+    // Data catchers
+    var passedUsername: String!
     var passedEmail: String!
     
     @IBOutlet weak var username: UILabel!
@@ -18,7 +19,7 @@ class DetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
-        self.username.text = passedUserName
+        self.username.text = passedUsername
         self.email.text = passedEmail
     }
     

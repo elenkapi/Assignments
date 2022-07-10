@@ -173,7 +173,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEa-3w-Bds">
-                                <rect key="frame" x="100" y="518" width="190" height="38.333333333333371"/>
+                                <rect key="frame" x="100" y="564.66666666666663" width="190" height="38.333333333333371"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -188,7 +188,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIi-9j-OO6">
-                                <rect key="frame" x="100" y="576.33333333333337" width="190" height="31"/>
+                                <rect key="frame" x="100" y="623" width="190" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back">
                                     <backgroundConfiguration key="background" cornerRadius="33"/>
@@ -199,16 +199,29 @@
                                     <action selector="backToLogin:" destination="bmf-QG-OoB" eventType="touchUpInside" id="OJQ-Gb-fM4"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Edi-Xd-lM5">
+                                <rect key="frame" x="20" y="469.66666666666669" width="350" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.85625845190000005" green="0.86268740889999995" blue="0.7488324046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" red="0.85625845190000005" green="0.86268740889999995" blue="0.7488324046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IMT-EP-oH5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fEa-3w-Bds" firstAttribute="top" secondItem="A7m-RH-3bU" secondAttribute="bottom" constant="88.329999999999998" id="0RS-aY-zkD"/>
+                            <constraint firstItem="fEa-3w-Bds" firstAttribute="top" secondItem="A7m-RH-3bU" secondAttribute="bottom" constant="135" id="0RS-aY-zkD"/>
                             <constraint firstItem="IMT-EP-oH5" firstAttribute="trailing" secondItem="mU9-CP-PJO" secondAttribute="trailing" constant="20" id="16A-nB-6we"/>
                             <constraint firstItem="JDd-X8-7Up" firstAttribute="leading" secondItem="JJ8-7y-FOJ" secondAttribute="leading" id="1mb-Qx-tia"/>
                             <constraint firstItem="IMT-EP-oH5" firstAttribute="trailing" secondItem="fEa-3w-Bds" secondAttribute="trailing" constant="100" id="4c4-ov-NEL"/>
                             <constraint firstItem="mU9-CP-PJO" firstAttribute="leading" secondItem="IMT-EP-oH5" secondAttribute="leading" constant="20" id="62c-x4-sQK"/>
                             <constraint firstItem="VO0-6w-MTa" firstAttribute="top" secondItem="8LJ-QQ-58p" secondAttribute="bottom" constant="75" id="Bzt-y5-5wH"/>
+                            <constraint firstItem="IMT-EP-oH5" firstAttribute="trailing" secondItem="Edi-Xd-lM5" secondAttribute="trailing" constant="20" id="T7y-da-6yE"/>
                             <constraint firstItem="IMT-EP-oH5" firstAttribute="trailing" secondItem="hIi-9j-OO6" secondAttribute="trailing" constant="100" id="WKZ-Ap-eDp"/>
                             <constraint firstItem="8LJ-QQ-58p" firstAttribute="top" secondItem="IMT-EP-oH5" secondAttribute="top" constant="70" id="Wd4-qJ-aUd"/>
                             <constraint firstItem="JDd-X8-7Up" firstAttribute="top" secondItem="JJ8-7y-FOJ" secondAttribute="top" id="Xn2-pP-Wbo"/>
@@ -217,8 +230,10 @@
                             <constraint firstItem="hIi-9j-OO6" firstAttribute="top" secondItem="fEa-3w-Bds" secondAttribute="bottom" constant="20" id="cMM-Ea-Xq8"/>
                             <constraint firstItem="mU9-CP-PJO" firstAttribute="top" secondItem="VO0-6w-MTa" secondAttribute="bottom" constant="40" id="cs8-DV-vIX"/>
                             <constraint firstItem="VO0-6w-MTa" firstAttribute="leading" secondItem="IMT-EP-oH5" secondAttribute="leading" constant="20" id="eSy-Da-2hS"/>
+                            <constraint firstItem="Edi-Xd-lM5" firstAttribute="top" secondItem="A7m-RH-3bU" secondAttribute="bottom" constant="40" id="et4-wJ-i3u"/>
                             <constraint firstItem="IMT-EP-oH5" firstAttribute="trailing" secondItem="VO0-6w-MTa" secondAttribute="trailing" constant="20" id="fKw-6v-ESU"/>
                             <constraint firstAttribute="trailing" secondItem="JDd-X8-7Up" secondAttribute="trailing" id="iYS-f5-ckx"/>
+                            <constraint firstItem="Edi-Xd-lM5" firstAttribute="leading" secondItem="IMT-EP-oH5" secondAttribute="leading" constant="20" id="j7n-nY-Jnm"/>
                             <constraint firstItem="fEa-3w-Bds" firstAttribute="leading" secondItem="IMT-EP-oH5" secondAttribute="leading" constant="100" id="r0z-ez-92F"/>
                             <constraint firstItem="A7m-RH-3bU" firstAttribute="top" secondItem="mU9-CP-PJO" secondAttribute="bottom" constant="40" id="v9W-7k-qG2"/>
                             <constraint firstItem="8LJ-QQ-58p" firstAttribute="leading" secondItem="IMT-EP-oH5" secondAttribute="leading" constant="40" id="vgt-0V-ike"/>
@@ -228,6 +243,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="confirmedPassword" destination="Edi-Xd-lM5" id="ivH-Cw-CM2"/>
                         <outlet property="email" destination="mU9-CP-PJO" id="5va-aD-6QR"/>
                         <outlet property="password" destination="A7m-RH-3bU" id="DDo-mf-AP5"/>
                         <outlet property="username" destination="VO0-6w-MTa" id="MlR-nr-JOf"/>

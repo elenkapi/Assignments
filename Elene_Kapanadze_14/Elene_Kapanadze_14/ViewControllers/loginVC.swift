@@ -16,30 +16,30 @@ class loginVC: UIViewController {
     var registeredUsername: String?
     var registeredEmail: String?
     var registeredPassword: String?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    func showAlert() {
-        let alertController = UIAlertController(title: "Oops!", message: "Incorrect Credentials", preferredStyle: .alert)
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
         alertController.addAction(action)
         self.navigationController?.present(alertController, animated: true)
     }
-
+    
     
     @IBAction func signIn(_ sender: UIButton) {
         if username.text == registeredUsername && password.text == registeredPassword {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "DetailsVC") as? DetailsVC
             guard let vc = vc else { return }
-            vc.passedUserName = registeredPassword
+            vc.passedUsername = registeredUsername
             vc.passedEmail = registeredEmail
             vc.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
-            showAlert()
+            showAlert(title: "Oops!", message: "Incorrect Credentials")
         }
         
     }
