@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gariPowerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-ue-prF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-ue-prF">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB9-cH-Kt8">
@@ -38,27 +38,20 @@
                                 <color key="textColor" red="0.77204080100000005" green="0.68530813209999997" blue="0.64684042259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="symbol" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-sV-vZC">
-                                <rect key="frame" x="74" y="311.33333333333331" width="240" height="186.66666666666669"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eTr-ue-prF" secondAttribute="bottom" id="27a-B4-UPo"/>
                             <constraint firstAttribute="trailing" secondItem="eTr-ue-prF" secondAttribute="trailing" id="2b8-6A-zyt"/>
-                            <constraint firstItem="zJa-sV-vZC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="5QC-qp-olC"/>
                             <constraint firstItem="eTr-ue-prF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N14-3u-10Q"/>
                             <constraint firstItem="KB9-cH-Kt8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="460" id="Tgd-7I-CN0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zJa-sV-vZC" secondAttribute="trailing" constant="76" id="W7a-7U-hCs"/>
                             <constraint firstItem="KB9-cH-Kt8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Wim-gA-8sA"/>
                             <constraint firstItem="eTr-ue-prF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZHl-95-eio"/>
                             <constraint firstItem="WBt-bR-xYK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwE-N2-Rz4"/>
-                            <constraint firstItem="KB9-cH-Kt8" firstAttribute="top" secondItem="zJa-sV-vZC" secondAttribute="bottom" constant="50" id="lXm-lv-GKq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KB9-cH-Kt8" secondAttribute="bottom" constant="212" id="nOL-hh-ftT"/>
                             <constraint firstItem="WBt-bR-xYK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="s9e-Ne-Bgx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KB9-cH-Kt8" secondAttribute="trailing" constant="100" id="tso-W1-OZH"/>
-                            <constraint firstItem="zJa-sV-vZC" firstAttribute="top" secondItem="WBt-bR-xYK" secondAttribute="bottom" constant="50" id="zcf-jV-6Lb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yBA-Ge-INq"/>
@@ -75,7 +68,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gariPowerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Tq3-sz-VnZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="Tq3-sz-VnZ">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HJg-f9-8TN">
@@ -297,11 +290,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="183" height="275"/>
-        <image name="always" width="223.33332824707031" height="397"/>
-        <image name="gariPowerBackground" width="107.66666412353516" height="240.33332824707031"/>
-        <image name="star" width="512" height="512"/>
-        <image name="symbol" width="487.5447998046875" height="424.43408203125"/>
+        <image name="1" width="1175" height="1763"/>
+        <image name="always" width="1080" height="1920"/>
+        <image name="backgr" width="254" height="509"/>
+        <image name="star" width="229" height="220"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
